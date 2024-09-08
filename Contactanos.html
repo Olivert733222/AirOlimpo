@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unete a Air Olimpo</title>
+    <style>
+        /* CSS General */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 0 20px;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #467bba;
+        }
+
+        .navbar-top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        .navbar-top img {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            object-fit: cover;
+        }
+
+        .navbar-top img.left {
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: auto;
+            height: 100px;
+        }
+
+        .navbar-top img.right {
+            right: 10px;
+            top: calc(50% + 10px);
+            transform: translateY(-50%);
+            width: auto;
+            height: 100px;
+        }
+
+        .navbar-top h1 {
+            font-size: 4rem;
+            color: white;
+            margin: 0;
+            z-index: 1;
+        }
+
+        .navbar-bottom {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background-color: #3665a2;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            padding: 10px 0;
+        }
+
+        .nav-links li {
+            margin: 0 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Formulario */
+        .form-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .form-title {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        input, textarea {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #467bba;
+        }
+
+        button {
+            padding: 10px 30px;
+            font-size: 1.2rem;
+            background-color: #000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <!-- Barra superior -->
+        <div class="navbar-top">
+            <img src="Imagemes/Ivao_blue.png" alt="Imagen Izquierda" class="left">
+            <h1>Air Olimpo</h1>
+            <img src="Imagemes/channels4_profile.png" alt="Imagen Derecha" class="right">
+        </div>
+        <!-- Barra inferior -->
+        <div class="navbar-bottom">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="flota.html">Flota</a></li>
+                <li><a href="rutas.html">Rutas</a></li>
+                <li><a href="pilotos.html">Pilotos</a></li>
+                <li><a href="Servicios.html">Utilidades</a></li>
+                <li><a href="Contactanos.html">Contactanos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Formulario de Aplicación -->
+    <div class="form-container">
+        <h2 class="form-title">ÚNETE A NUESTRA TRIPULACIÓN</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="ivao_id" placeholder="Tu ID IVAO">
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Tu correo" required>
+            </div>
+            <div class="form-group">
+                <textarea name="motivo" rows="4" placeholder="¿Por qué quieres ser parte de Air Olimpo?" required></textarea>
+            </div>
+            <button type="submit">APLICAR</button>
+        </form>
+    </div>
+
+</body>
+</html>

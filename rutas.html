@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerolatina - Nuestros Destinos</title>
+    <style>
+        /* CSS General */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: #fff;
+            background-color: #333; /* Cambia el color de fondo según sea necesario */
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #467bba;
+        }
+
+        .navbar-top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        .navbar-top img {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            object-fit: cover;
+        }
+
+        .navbar-top img.left {
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .navbar-top img.right {
+            right: 10px;
+            top: calc(50% + 10px);
+            transform: translateY(-50%);
+        }
+
+        .navbar-top h1 {
+            font-size: 3rem;
+            color: white;
+            margin: 0;
+            z-index: 1;
+        }
+
+        .navbar-bottom {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background-color: #3665a2;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            padding: 10px 0;
+        }
+
+        .nav-links li {
+            margin: 0 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Header */
+        .header {
+            position: relative;
+            background-image: url('background-image-url'); /* URL de la imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            text-align: left;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+        }
+
+        /* Content */
+        .content {
+            display: flex;
+            padding: 20px;
+        }
+
+        .content-left {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .content-left h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .content-left ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .content-left ul li {
+            font-size: 1rem;
+            margin: 5px 0;
+        }
+
+        .content-right {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .map {
+            background-color: #e0e4e8;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .map img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <!-- Barra superior -->
+        <div class="navbar-top">
+            <img src="imagemes/Ivao_blue.png" alt="Imagen Izquierda" class="left">
+            <h1>Air Olimpo</h1>
+            <img src="imagemes/channels4_profile.png" alt="Imagen Derecha" class="right">
+        </div>
+        <!-- Barra inferior -->
+        <div class="navbar-bottom">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="flota.html">Flota</a></li>
+                <li><a href="rutas.html">Rutas</a></li>
+                <li><a href="pilotos.html">Pilotos</a></li>
+                <li><a href="Servicios.html">Utilidades</a></li>
+                <li><a href="Contactanos.html">Contactanos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>NUESTROS DESTINOS</h1>
+        <p>En Aerolatina nos preocupamos por conectar diariamente a nuestros pasajeros con varios destinos y dar el mejor servicio sobre las nubes, para ellos Aerolatina cuenta con los siguientes destinos:</p>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <div class="content-left">
+            <h2>Destinos</h2>
+            <ul>
+                <li>+30 destinos internacionales</li>
+                <li>+40 destinos nacionales</li>
+                <li>+20 conexiones</li>
+            </ul>
+        </div>
+        <div class="content-right">
+            <div class="map">
+                <img src="Imagemes/el+salvador+mapa+de+destinos+aereos.png" alt="Mapa de destinos"> <!-- Reemplaza con la URL de la imagen del mapa -->
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

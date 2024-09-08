@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Olimpo - Divisiones</title>
+    <style>
+        /* CSS General */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 0 20px;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #467bba;
+        }
+
+        .navbar-top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        .navbar-top img {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            object-fit: cover;
+        }
+
+        .navbar-top img.left {
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: auto;
+            height: 100px;
+        }
+
+        .navbar-top img.right {
+            right: 10px;
+            top: calc(50% + 10px);
+            transform: translateY(-50%);
+            width: auto;
+            height: 100px;
+        }
+
+        .navbar-top h1 {
+            font-size: 4rem;
+            color: white;
+            margin: 0;
+            z-index: 1;
+        }
+
+        .navbar-bottom {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background-color: #3665a2;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            padding: 10px 0;
+        }
+
+        .nav-links li {
+            margin: 0 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Section Layout */
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 40px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section img {
+            max-width: 45%;
+            border-radius: 10px;
+        }
+
+        .section-content {
+            max-width: 50%;
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .section-text {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Alternar posiciones */
+        .section-reverse {
+            flex-direction: row-reverse;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .section img {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .section-content {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <!-- Barra superior -->
+        <div class="navbar-top">
+            <img src="Imagemes/Ivao_blue.png" alt="Imagen Izquierda" class="left">
+            <h1>Air Olimpo</h1>
+            <img src="Imagemes/channels4_profile.png" alt="Imagen Derecha" class="right">
+        </div>
+        <!-- Barra inferior -->
+        <div class="navbar-bottom">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="flota.html">Flota</a></li>
+                <li><a href="rutas.html">Rutas</a></li>
+                <li><a href="pilotos.html">Pilotos</a></li>
+                <li><a href="Servicios.html">Utilidades</a></li>
+                <li><a href="Contactanos.html">Contactanos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección 1: Imagen a la izquierda, texto a la derecha -->
+    <section class="section">
+        <img src="Imagemes/imagen1.jpg" alt="Transporte de Pasajeros">
+        <div class="section-content">
+            <h2 class="section-title">Transporte de Pasajeros</h2>
+            <p class="section-text">Ofrecemos servicios de transporte de pasajeros y mercancías, así como clases de instrucción virtual.</p>
+        </div>
+    </section>
+
+    <!-- Sección 2: Imagen a la derecha, texto a la izquierda -->
+    <section class="section section-reverse">
+        <div class="section-content">
+            <h2 class="section-title">Transporte de Mercancías</h2>
+            <p class="section-text">Proveemos soluciones eficientes y seguras para el transporte de mercancías a nivel mundial.</p>
+        </div>
+        <img src="Imagemes/imagen2.jpg" alt="Transporte de Mercancías">
+    </section>
+
+</body>
+</html>

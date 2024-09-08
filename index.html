@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Olimpo - Inicio</title>
+    <style>
+        /* CSS General */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #467bba;
+        }
+
+        .navbar-top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        .navbar-top img {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            object-fit: cover;
+        }
+
+        .navbar-top img.left {
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: auto;
+            height: 100px;
+        }
+
+        .navbar-top img.right {
+            right: 10px;
+            top: calc(50% + 10px);
+            transform: translateY(-50%);
+            width: auto;
+            height: 100px;
+        }
+
+        .navbar-top h1 {
+            font-size: 4rem;
+            color: white;
+            margin: 0;
+            z-index: 1;
+        }
+
+        .navbar-bottom {
+            display: flex;
+            justify-content: center;
+            width: 110%;
+            background-color: #3665a2;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            padding: 10px 0;
+        }
+
+        .nav-links li {
+            margin: 0 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: rgb(255, 238, 0);
+            z-index: 1;
+        }
+
+        .features {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .features-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            max-width: 200px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .feature img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            font-size: 0.9rem;
+            color: #333;
+        }
+
+        /* Estilos para la sección Sobre Nosotros */
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .video {
+            flex: 1;
+            text-align: left;
+        }
+
+        .video video {
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .text {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <!-- Barra superior -->
+        <div class="navbar-top">
+            <img src="Imagemes/Ivao_blue.png" alt="Imagen Izquierda" class="left">
+            <h1>Air Olimpo</h1>
+            <img src="Imagemes/channels4_profile.png" alt="Imagen Derecha" class="right">
+        </div>
+        <!-- Barra inferior -->
+        <div class="navbar-bottom">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="flota.html">Flota</a></li>
+                <li><a href="rutas.html">Rutas</a></li>
+                <li><a href="pilotos.html">Pilotos</a></li>
+                <li><a href="Servicios.html">Servicios</a></li>
+                <li><a href="Contactanos.html">Contactanos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section con video -->
+    <section class="hero">
+        <video autoplay muted loop>
+            <source src="Imagemes/0908 (1)(1).mp4" type="video/mp4">
+        </video>
+        <p>"Ven y no pierdas el sueño de volar"</p>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="sobre-nosotros">
+        <div class="container">
+            <div class="video">
+                <!-- Aquí está el video que reemplaza la imagen -->
+                <video autoplay muted loop>
+                    <source src="Imagemes/0908.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="text">
+                <h1>Sobre Nosotros</h1>
+                <p>Aerolatina VA es una entidad virtual sin ánimo de lucro dedicada al transporte y la instrucción de manera virtual.</p>
+                <p>Se constituye como una entidad virtual, sin ánimo de lucro, cuya dedicación exclusiva es el transporte de pasajeros, mercancías y la instrucción de una forma virtual.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>¡Ven y no pierdas el sueño de volar!</h2>
+        <div class="features-container">
+            <div class="feature">
+                <img src="feature1.png" alt="Sistema PIREP">
+                <p>Contamos con un sistema PIREP avanzado que incluye cientos de rutas alrededor del mundo.</p>
+            </div>
+            <div class="feature">
+                <img src="feature2.png" alt="Flota diversa">
+                <p>Explora nuestra flota diversa. Desde ágiles turbohélices hasta imponentes aviones para conquistar cualquier ruta.</p>
+            </div>
+            <div class="feature">
+                <img src="feature3.png" alt="Precisión en vuelo">
+                <p>Vive la emoción de volar con precisión. Contamos con sistemas avanzados en seguimientos de vuelo.</p>
+            </div>
+            <div class="feature">
+                <img src="feature4.png" alt="Pilotos capacitados">
+                <p>Contamos con los pilotos mejor capacitados para darte una experiencia de vuelo única y esperada.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

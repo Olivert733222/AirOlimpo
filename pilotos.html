@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Olimpo - Nuestros Pilotos Activos</title>
+    <style>
+        /* CSS General */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #467bba;
+        }
+
+        .navbar-top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        .navbar-top img {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            object-fit: cover;
+        }
+
+        .navbar-top img.left {
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: auto;
+            height: 100px;
+        }
+
+        .navbar-top img.right {
+            right: 10px;
+            top: calc(50% + 10px);
+            transform: translateY(-50%);
+            width: auto;
+            height: 100px;
+        }
+
+        .navbar-top h1 {
+            font-size: 4rem;
+            color: white;
+            margin: 0;
+            z-index: 1;
+        }
+
+        .navbar-bottom {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background-color: #3665a2;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            padding: 10px 0;
+        }
+
+        .nav-links li {
+            margin: 0 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Section Layout */
+        .section-title {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .image-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: calc(20% - 40px); /* Ajuste para 5 imágenes */
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .image-item p {
+            color: #555;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .image-item {
+                width: calc(50% - 40px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .image-item {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <!-- Barra superior -->
+        <div class="navbar-top">
+            <img src="Imagemes/Ivao_blue.png" alt="Imagen Izquierda" class="left">
+            <h1>Air Olimpo</h1>
+            <img src="Imagemes/channels4_profile.png" alt="Imagen Derecha" class="right">
+        </div>
+        <!-- Barra inferior -->
+        <div class="navbar-bottom">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="flota.html">Flota</a></li>
+                <li><a href="rutas.html">Rutas</a></li>
+                <li><a href="pilotos.html">Pilotos</a></li>
+                <li><a href="Servicios.html">Utilidades</a></li>
+                <li><a href="Contactanos.html">Contactanos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Título de la Sección -->
+    <section class="section-title">
+        <h2>Nuestros Pilotos Activos</h2>
+    </section>
+
+    <!-- Galería de Imágenes -->
+    <div class="image-grid">
+        <!-- Imágenes de Pilotos Activos -->
+        <div class="image-item">
+            <img src="Imagemes/images.png" alt="Piloto 1">
+            <p>CEO Oliver Garrido</p>
+            <a href="enlace_piloto1.html">Ver perfil</a> <!-- Agrega el enlace aquí -->
+        </div>
+        <div class="image-item">
+            <img src="Imagemes/images.png" alt="Piloto 2">
+            <p>Manager Harold Saza</p>
+            <a href="enlace_piloto2.html">Ver perfil</a> <!-- Agrega el enlace aquí -->
+        </div>
+        <div class="image-item">
+            <img src="Imagemes/images.png" alt="Piloto 3">
+            <p>CoPresidente Victor Mendoza</p>
+            <a href="enlace_piloto3.html">Ver perfil</a> <!-- Agrega el enlace aquí -->
+        </div>
+        <div class="image-item">
+            <img src="Imagemes/images.png" alt="Piloto 4">
+            <p>Flight Director</p>
+            <a href="enlace_piloto4.html">Ver perfil</a> <!-- Agrega el enlace aquí -->
+        </div>
+        <div class="image-item">
+            <img src="Imagemes/images.png" alt="Piloto 5">
+            <p>Nombre del piloto 5</p>
+            <a href="enlace_piloto5.html">Ver perfil</a> <!-- Agrega el enlace aquí -->
+        </div>
+        
+        <div class="image-item">
+            <img src="Imagemes/images.png" alt="Piloto 5">
+            <p>Nombre del piloto 5</p>
+        </div>
+
+        <!-- Plantilla adicional para copiar y pegar -->
+        <div class="image-item">
+            <img src="piloto6.jpg" alt="Piloto 6">
+            <p>Nombre del piloto 6</p>
+        </div>
+        <!-- Copiar el bloque de arriba y editar según sea necesario -->
+    </div>
+
+</body>
+</html>
